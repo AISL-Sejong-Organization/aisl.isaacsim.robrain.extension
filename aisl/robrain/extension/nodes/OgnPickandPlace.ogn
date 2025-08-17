@@ -1,0 +1,96 @@
+{
+    "pickandplacenode": {
+        "version": 1,
+        "description": "",
+        "language": "Python",
+        "metadata": {
+            "uiName": "Pick and Place Node"
+        },
+        "inputs": {
+            "execIn": {
+                "type": "execution",
+                "description": "",
+                "default": 0,
+                "metadata": {
+                    "uiName": "Exec In"
+                }
+            },
+            "grasp_point_ori": {
+                "type": "double[4]",
+                "description": "",
+                "metadata": {
+                    "uiName": "Grasping Point Orientation"
+                },
+                "default": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "grasp_point_pos": {
+                "type": "double[3]",
+                "description": "",
+                "default": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "metadata": {
+                    "uiName": "Grasping Point Position"
+                }
+            },
+            "place_point_ori": {
+                "type": "double[4]",
+                "description": "",
+                "metadata": {
+                    "uiName": "Placement Point Orientation"
+                },
+                "default": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "place_point_pos": {
+                "type": "double[3]",
+                "description": "",
+                "default": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "metadata": {
+                    "uiName": "Placement Point Position"
+                }
+            },
+            "robot_prim_path": {
+                "type": "token",
+                "description": "",
+                "default": "",
+                "metadata": {
+                    "uiName": "Robot Prim Path"
+                }
+            }
+        },
+        "outputs": {
+            "gripper_grasp_command": {
+                "type": "bool",
+                "description": "",
+                "default": false,
+                "metadata": {
+                    "uiName": "Gripper Grasp Command"
+                }
+            },
+            "pick_and_place_command": {
+                "type": "bool",
+                "description": "",
+                "metadata": {
+                    "uiName": "Pick and Place Command"
+                },
+                "default": false
+            }
+        }
+    }
+}

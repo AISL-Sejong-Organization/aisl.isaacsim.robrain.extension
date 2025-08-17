@@ -1,0 +1,46 @@
+{
+    "targetfollownode": {
+        "version": 1,
+        "description": "",
+        "language": "Python",
+        "metadata": {
+            "uiName": "Target Follow Node"
+        },
+        "inputs": {
+            "execIn": {
+                "type": "execution",
+                "description": "",
+                "default": 0,
+                "metadata": {
+                    "uiName": "Exec In"
+                }
+            },
+            "target_prim_path": {
+                "type": "token",
+                "description": "",
+                "metadata": {
+                    "uiName": "Target Prim Path"
+                },
+                "default": ""
+            },
+            "robot_prim_path": {
+                "type": "token",
+                "description": "",
+                "default": "",
+                "metadata": {
+                    "uiName": "Robot Prim Path"
+                }
+            }
+        },
+        "outputs": {
+            "target_follow_command": {
+                "type": "bool",
+                "description": "",
+                "metadata": {
+                    "uiName": "Target Follow Command"
+                },
+                "default": false
+            }
+        }
+    }
+}
