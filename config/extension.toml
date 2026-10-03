@@ -30,6 +30,7 @@ exclude = ["Ogn*Database.py"]
 [dependencies]
 "omni.kit.test" = {}
 "omni.graph" = {}
+"omni.isaac.ros2_bridge" = {}  # rclpy를 브리지가 먼저 로드하도록
 
 # Main python module this extension provides, it will be publicly available as "import aisl.robrain.extension".
 [[python.module]]
