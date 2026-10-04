@@ -295,7 +295,7 @@ class OgnPickandPlace:
                 state.ee_name = "end_effector_link"
                 state.robot_name = SELECTED_ROBOT
 
-                robot_cfg_path = Path(__file__).parent.parent.parent / SELECTED_ROBOT
+                robot_cfg_path = Path(__file__).parent.parent / "robot" / SELECTED_ROBOT
                 state.robot_description_path = os.path.join(
                     robot_cfg_path, SELECTED_ROBOT + "_descriptor.yaml"
                 )
